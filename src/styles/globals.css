@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'Tropical';
+  src: url('/Font/Tropical.woff2') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/* Reset default browser styles */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Remove default outline styles */
+a:focus,
+button:focus {
+  outline: none;
+}
+
+/* Add box-sizing: border-box to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Add custom global styles here */
+
+
+/* styles.css */
+.clamped-text {
+  font-size: clamp(2rem, 10vw - 1rem, 10vw - 2rem);
+}
+
+/* globals.css */
+.scroll-container {
+  overflow: hidden;
+  position: relative;
+  will-change: transform;
+}
+
+.fixed-center {
+  position: fixed;
+  top: 55.5%;
+  transform: translateY(-50%);
+}
+
+
+body {
+  @apply dark:bg-[#121212]
+}
+

@@ -1,0 +1,39 @@
+{
+  "HeaderComponent": {
+    "workprofile": "Développeur web",
+    "location": "Localisation",
+    "Language": "Langue"
+
+  },
+  "HeroComponent": {
+    "mainText": "Un développeur        caméléon qui             s'adapte à                    tout"
+  },
+
+  "ProjectComponent": {
+    "buttonProject": "Voir plus",
+    "buttonallproject": "Voir tous les projets",
+    "MainTitleProject": "projets terminés",
+    "subTitleProject": "Découvrez",
+    "descProject1": "En 10 ans nous avons",
+    "descProject2": "implanter plus de",
+    "descProject3": "400+ sites, voici certains d'eux:"
+  },
+  "AboutComponent": {
+    "Line1": "Texte qui glisse du bas",
+    "Line1_2": "Allez courage, tu vas y arriver",
+    "Line2": "Un autre texte qui apparaît",
+    "Line2_2": "Continue, tu y es presque !",
+    "Line3": "Dernier encouragement",
+    "Line3_2": "La réussite est proche !"
+  },
+
+  "PhotoComponent": {
+    "Maintxt": "Je suis toujours exité de discuter de nouveaux projet et de collaborer sur de nouvelles opportunités. N'hésitez pas à me contacter et capturons ensemble de beaux moments, n'hésiter pas à me contacter et travaillons ensemble sur de magnifiqiue projet"
+  },
+  "footerComponent": {
+    "Maintxt": "Prêt ? On",
+    "Subtxt": "en discute",
+    "buttonTxt": "Contactez-moi",
+    "copyrigth": "Créer et Designer par Moi"
+  }
+}
