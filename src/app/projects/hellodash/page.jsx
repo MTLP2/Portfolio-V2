@@ -101,7 +101,7 @@ export default function Page() {
         <div className="relative h-[50vh] md:h-[110vh] z-10 ">
           <video
             ref={videoRef}
-            src="/hellodash/hellodash.mov" // Changez le fichier à un format compatible, comme .mp4
+            src="https://mathlpbucket.s3.eu-west-3.amazonaws.com/hellodash.mov" // Changez le fichier à un format compatible, comme .mp4
             width="100%"
             height="100%"
             loop

@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /private-page
+
+# Host
+Host: https://matheolopes.com
+
+# Sitemaps
+Sitemap: https://matheolopes.com/sitemap.xml

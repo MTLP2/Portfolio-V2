@@ -30,5 +30,4 @@ jspm_packages/
 # MacOS specific files
 .DS_Store
 
-# Public directory
-public/
+
