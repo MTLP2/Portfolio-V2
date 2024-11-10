@@ -42,11 +42,11 @@ export default function Page() {
   }, [isInView]);
 
   return (
-    <div className="bg-[#ecebeb]">
+    <div className="bg-[#ecebeb] dark:bg-[#121212]">
       <SmoothScrool>
-        <div className=" pt-44 md:pt-32 py-24 font-Tropical flex flex-col ml-5 lg:ml-20 relative z-10">
+        <div className=" pt-44 md:pt-32 py-24 font-Tropical flex flex-col ml-5 lg:ml-20 relative z-10 dark:text-white">
           {/* Animation par caractère pour "Thomas Lossie" */}
-          <div className="text-5xl md:text-8xl overflow-hidden">
+          <div className="text-5xl md:text-8xl overflow-hidden ">
             {text.split("").map((char, i) => (
               <motion.span
                 key={i}

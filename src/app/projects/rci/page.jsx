@@ -40,7 +40,7 @@ export default function Page() {
   }, [isInView]);
 
   return (
-    <div className="bg-[#ecebeb]">
+    <div className="bg-[#ecebeb] dark:bg-[#121212] dark:text-white">
       <SmoothScrool>
         <div className=" pt-44 md:pt-32 py-24 font-Tropical flex flex-col ml-5 lg:ml-20 relative z-10">
           {/* Animation par caractère pour "Thomas Lossie" */}
@@ -109,7 +109,7 @@ export default function Page() {
           ></video>
         </div>
       </SmoothScrool>
-      <div className="flex flex-wrap flex-col md:flex-row pb-10 pt-24 w-full bg-[#ecebeb] relative z-20 justify-center gap-24">
+      <div className="flex flex-wrap flex-col md:flex-row pb-10 pt-24 w-full bg-[#ecebeb] dark:bg-[#121212]  relative z-20 justify-center gap-24">
         {imageUrls.map((url, i) => (
           <div key={i} className="w-full md:w-[40%] h-[50vh] relative">
             <Image
