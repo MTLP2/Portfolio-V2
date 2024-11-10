@@ -33,9 +33,9 @@ const PhotoSection = () => {
       />
       <motion.div
         ref={ref}
-        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[500px] bg-white dark:bg-[#121212] p-8 rounded-lg shadow-lg"
+        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[500px] bg-white dark:bg-[#121212] p-8 rounded-lg shadow-lg flex flex-col items-center"
       >
-        <p className="mt-4 text-center text-2xl font-Tropical font-semibold mb-10 dark:text-gray-100">
+        <p className="mt-4 text-center text-xl w-[80%] md:w-full xl:text-2xl font-Tropical font-semibold mb-10 dark:text-gray-100">
           {t('Maintxt')}
         </p>
         <div className="flex items-center justify-center">

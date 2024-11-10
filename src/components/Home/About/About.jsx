@@ -79,12 +79,12 @@ const AnimatedText = () => {
         {/* Premier container */}
         <div
           ref={containerRef1}
-          className="overflow-hidden  w-full text-[28px] md:text-[40px] 2xl:text-[2.74vw] h-[7vh] md:h-[10vh] pt-8 relative flex justify-center items-center"
+          className="overflow-hidden  w-full text-[20px] md:text-[25px] lg:text-[30px] xl:text-[3vw] 2xl:text-[2.74vw] h-[7vh] md:h-[10vh] xl:pt-8 relative flex justify-center items-center"
         >
           <div className="absolute font-bold w-full text-center  z-10 dark:text-gray-100  text-gray-800">
             {t("Line1")}
           </div>
-          <div className="absolute font-bold z-0 dark:text-gray-100  text-gray-800">
+          <div className="absolute font-bold z-0 dark:text-gray-100 pt-4 text-gray-800">
             {t("Line1_2")}
           </div>
         </div>
@@ -92,12 +92,12 @@ const AnimatedText = () => {
         {/* Deuxième container */}
         <div
           ref={containerRef2}
-          className="overflow-hidden w-full md:h-[10vh] text-[28px] md:text-[40px] 2xl:text-[2.74vw] h-[7vh] pt-8  relative flex justify-center items-center"
+          className="overflow-hidden w-full md:h-[10vh] text-[20px] md:text-[25px] lg:text-[30px] xl:text-[3vw]  2xl:text-[2.74vw] h-[7vh] xl:pt-8  relative flex justify-center items-center"
         >
           <div className="absolute font-bold w-full text-center z-10 dark:text-gray-100  text-gray-800">
             {t("Line2")}
           </div>
-          <div className="absolute font-bold z-0 dark:text-gray-100  text-gray-800">
+          <div className="absolute font-bold z-0 dark:text-gray-100 pt-4 text-gray-800">
             {t("Line2_2")}
           </div>
         </div>
@@ -105,12 +105,12 @@ const AnimatedText = () => {
         {/* Troisième container */}
         <div
           ref={containerRef3}
-          className="overflow-hidden w-full md:h-[10vh] text-[28px] md:text-[40px] 2xl:text-[2.74vw] h-[7vh] pt-8 relative flex justify-center items-center"
+          className="overflow-hidden w-full md:h-[10vh] text-[20px] md:text-[25px] lg:text-[30px] xl:text-[3vw] 2xl:text-[2.74vw] h-[7vh] xl:pt-8 relative flex justify-center items-center"
         >
           <div className="absolute font-bold  w-full text-center z-10 dark:text-gray-100  text-gray-800">
             {t("Line3")}
           </div>
-          <div className="absolute font-bold z-0 dark:text-gray-100  text-gray-800">
+          <div className="absolute font-bold z-0 dark:text-gray-100 pt-4  text-gray-800">
             {t("Line3_2")}
           </div>
         </div>

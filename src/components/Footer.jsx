@@ -33,7 +33,7 @@ const Footer = () => {
                                 </p>
                                 <a
                                     href="mailto:math.lp.dev@gmail.com?subject=Inquiry&body=Hello, I would like to discuss..."
-                                    className="ml-8 px-9 py-3 h-[20%] w-[300px] bg-black text-white rounded-lg hover:scale-105 transition duration-300 xl:mb-10 relative flex items-center"
+                                    className="ml-8 px-9 py-3 h-[20%] xl:w-[300px] bg-black text-white rounded-lg hover:scale-105 transition duration-300 xl:mb-10 relative flex items-center"
                                 >
                                     <span className="w-2 h-2 bg-white rounded-full mr-2"></span>
                                     {t("buttonTxt")}

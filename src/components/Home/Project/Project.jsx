@@ -185,7 +185,7 @@ const Project = () => {
       <div className="mb-6 flex  flex-col md:flex-row justify-between md:items-end">
         <motion.h2
           ref={h2Ref}
-          className="text-[3.4rem] md:text-[4.375rem] lg:text-[6.375rem] xl:text-[9.375rem] leading-[1.10] w-[65%] md:w-[48%] 2xl:w-full  font-Tropical font-semibold dark:text-gray-100"
+          className="text-[3.4rem] md:text-[4.375rem] lg:text-[6.375rem] xl:text-[9.375rem] leading-[1.10] w-[72%] md:w-[58%] lg:w-[54%] xl:w-[50%] 2xl:w-full  font-Tropical font-semibold  dark:text-gray-100"
           initial={{ opacity: 0, y: 50 }}
           animate={h2Controls}
           custom={(index) => index}
