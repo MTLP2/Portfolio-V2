@@ -106,6 +106,7 @@ export default function Page() {
             height="100%"
             loop
             muted
+            playsInline // Enables inline playback on mobile
             className="w-full object-contain absolute bg-gradient-to-b from-[#00b64f  ]  md:h-full top-0 left-0"
           ></video>
         </div>
