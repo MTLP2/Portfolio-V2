@@ -249,7 +249,7 @@ const Project = () => {
         <motion.div className="relative z-10" variants={imageMotion}>
           <Image
             src={project.image}
-            alt={`Project ${index + 1}`}
+            alt={`Project ${project.title}`}
             width={500}
             height={300}
             className="w-full object-cover h-[350px] rounded-[30px]"

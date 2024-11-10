@@ -49,19 +49,19 @@ const PhotoSection = () => {
         </div>
         <ul className="mt-8 text-center font-Tropical  dark:text-gray-100">
           <li>
-            <a href="#project1" className="hover:underline">
+            <a href="https://x.com/matholopes5" className="hover:underline">
               X:@MathLp
             </a>
           </li>
           <li>
-            <a href="#project2" className="hover:underline">
+            <a href="https://www.linkedin.com/in/matheo-lopes" className="hover:underline">
               Linkedin:Mathéo Lopes
             </a>
           </li>
           <li>
-            <a href="#project3" className="hover:underline">
+            <p href="#project3" className="hover:underline">
               math.lp.dev@gmail.com
-            </a>
+            </p>
           </li>
         </ul>
       </motion.div>
