@@ -1,37 +1,38 @@
 {
   "HeaderComponent": {
-    "workprofile": "web developer",
+    "workprofile": "Web Developer",
     "location": "Location",
     "Language": "Language"
   },
   "HeroComponent": {
-    "mainText": "A chameleon             developer who          adapts to                    anything"
+    "mainText": "A chameleon             developer who             adapts to                    anything"
   },
 
   "ProjectComponent": {
-    "title": "View More",
-    "buttonallproject": "View all projects",
-    "MainTitleProject": "finished projects",
-    "subTitleProject": "check out",
+    "buttonProject": "View More",
+    "buttonallproject": "View All Projects",
+    "MainTitleProject": "Completed Projects",
+    "subTitleProject": "Discover",
     "descProject1": "In 10 years we have",
-    "descProject2": "implemented more than",
+    "descProject2": "implemented over",
     "descProject3": "400+ sites, here are some of them:"
   },
   "AboutComponent": {
-    "Line1": "Texte qui glisse du bas",
-    "Line1_2": "Allez courage, tu vas y arriver",
-    "Line2": "Un autre texte qui apparaît",
-    "Line2_2": "Continue, tu y es presque !",
-    "Line3": "Dernier encouragement",
-    "Line3_2": "La réussite est proche !"
+    "Line1": "Hello, I’m Mathéo Lopes, a freelance web developer based in Paris.",
+    "Line1_2": " partnerships with professionals in various fields, ",
+    "Line2": " My background is rooted in development, but enriched by experiences ",
+    "Line2_2": " like real estate, working with teams; I especially appreciate ",
+    "Line3": "that make a difference. I’ve had the opportunity to create ",
+    "Line3_2": "the freedom this career offers and meeting interesting people."
   },
+
   "PhotoComponent": {
-    "Maintxt": "I'm always excited to discuss new projects and collaboration opportunities. Feel free to reach out and let's capture some beautiful moments together."
+    "Maintxt": "I'm always excited to discuss new projects and collaboration opportunities. Feel free to reach out and let’s work together on amazing projects."
   },
   "footerComponent": {
-    "Maintxt": "Prêt ? On",
-    "Subtxt": "en discute",
-    "buttonTxt": "Get in Touch ",
+    "Maintxt": "Ready? Let’s",
+    "Subtxt": "talk about it",
+    "buttonTxt": "Contact Me",
     "copyrigth": "Created and Designed by Me"
   }
 }

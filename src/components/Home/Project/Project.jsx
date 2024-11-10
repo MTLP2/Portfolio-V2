@@ -4,7 +4,47 @@ import Image from "next/image";
 import { motion, useAnimation, useInView } from "framer-motion";
 import SplitType from "split-type";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
-import {useTranslations} from 'next-intl';
+import { useTranslations } from "next-intl";
+import Link from "next/link";
+
+const projects = [
+  {
+    image: "/TL/TLHome.png",
+    title: "Thomas Lossie",
+    subtitle: "Designer",
+    link: "/projects/thomas-lossie",
+  },
+  {
+    image: "/Sibane.png",
+    title: "Sibane",
+    subtitle: "Diagnostics",
+    link: "/projects/sibane",
+  },
+  {
+    image: "/Hellodash.png",
+    title: "Hellodash",
+    subtitle: "Dashboard",
+    link: "/projects/hellodash",
+  },
+  {
+    image: "/RCi.png",
+    title: "RCi",
+    subtitle: "Conseil et inspection",
+    link: "/projects/rci",
+  },
+  {
+    image: "/Memodiag.png",
+    title: "Memodiag",
+    subtitle: "Diagnostics",
+    link: "/",
+  },
+  {
+    image: "/Diaginnov.png",
+    title: "Diaginnov",
+    subtitle: "Diagnostics",
+    link: "/projects/diaginnov",
+  },
+];
 
 
 // Define animations for the overlay and image
@@ -61,7 +101,7 @@ const projectInViewMotion = {
 
 const Project = () => {
   const h2Ref = useRef(null);
-  const t = useTranslations('ProjectComponent');
+  const t = useTranslations("ProjectComponent");
   const h3Ref = useRef(null);
   const pRef = useRef(null);
   const h2Controls = useAnimation();
@@ -71,7 +111,7 @@ const Project = () => {
   const h3InView = useInView(h3Ref, { once: true });
   const pInView = useInView(pRef, { once: true });
 
-  const [h3Lines, setH3Lines] = useState([t('subTitleProject')]);
+  const [h3Lines, setH3Lines] = useState([t("subTitleProject")]);
   const [pLines, setPLines] = useState([]);
 
   useEffect(() => {
@@ -108,11 +148,7 @@ const Project = () => {
     if (pInView) {
       const splitText = new SplitType(pRef.current, { types: "lines" });
 
-      const lines = [
-        (t('descProject1')),
-        t('descProject2'),
-        t('descProject3'),
-      ];
+      const lines = [t("descProject1"), t("descProject2"), t("descProject3")];
 
       setPLines(lines);
 
@@ -154,23 +190,31 @@ const Project = () => {
           animate={h2Controls}
           custom={(index) => index}
         >
-          {t('MainTitleProject').split('').map((char, index) => (
-            <span
-              key={index}
-              className="inline-block overflow-hidden"
-              style={{ display: "inline-block" }}
-            >
-              <motion.span
-                custom={index}
-                initial={{ y: "100%" }}
-                animate={h2Controls}
+          {t("MainTitleProject")
+            .split("")
+            .map((char, index) => (
+              <span
+                key={index}
+                className="inline-block overflow-hidden"
                 style={{ display: "inline-block" }}
               >
-                {char === " " ? <div className="  w-full 2xl:mr-[750px] 3xl:mr-[900px]"> </div> : char}{" "}
-                {/* Insertion de <br /> pour le retour à la ligne */}
-              </motion.span>
-            </span>
-          ))}
+                <motion.span
+                  custom={index}
+                  initial={{ y: "100%" }}
+                  animate={h2Controls}
+                  style={{ display: "inline-block" }}
+                >
+                  {char === " " ? (
+                    <div className="  w-full 2xl:mr-[750px] 3xl:mr-[900px]">
+                      {" "}
+                    </div>
+                  ) : (
+                    char
+                  )}{" "}
+                  {/* Insertion de <br /> pour le retour à la ligne */}
+                </motion.span>
+              </span>
+            ))}
         </motion.h2>
         <motion.p
           ref={pRef}
@@ -192,68 +236,62 @@ const Project = () => {
         </motion.p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4">
-        {[
-          "/TL/TLHome.png",
-          "/Sibane.png",
-          "/Hellodash.png",
-          "/RCi.png",
-          "/Memodiag.png",
-          "/Diaginnov.png",
-        ].map((src, index) => (
-          <motion.div
-            key={index}
-            className="rounded-[30px]  shadow-md overflow-hidden relative"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={projectInViewMotion}
+      {projects.map((project, index) => (
+    <Link key={index} href={project.link} target="_blank" rel="noopener noreferrer">
+      <motion.div
+        className="rounded-[30px] shadow-md overflow-hidden relative"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={projectInViewMotion}
+        whileHover="hover"
+      >
+        <motion.div className="relative z-10" variants={imageMotion}>
+          <Image
+            src={project.image}
+            alt={`Project ${index + 1}`}
+            width={500}
+            height={300}
+            className="w-full object-cover h-[350px] rounded-[30px]"
+          />
+        </motion.div>
+        <motion.div
+          className={`absolute bottom-0 left-0 right-0 ${
+            bgColors[index % bgColors.length]
+          } z-20 flex items-center justify-between pl-6 font-Tropical font-bold opacity-0`}
+          variants={overlayMotion}
+        >
+          <div>
+            <p className="text-white text-2xl lg:text-md xl:text-2xl 2xl:text-3xl uppercase">
+              {project.title}
+            </p>
+            <p className="text-white text-xl lg:text-lg xl:text-xl uppercase">
+              {project.subtitle}
+            </p>
+          </div>
+          <motion.button
+            className="flex items-center text-white text-sm xl:text-md mr-4 border rounded-full p-1 xl:p-4 font-semibold overflow-hidden relative"
+            initial="rest"
             whileHover="hover"
+            animate="rest"
           >
-            <motion.div className="relative z-10" variants={imageMotion}>
-              <Image
-                src={src}
-                alt={`Project ${index + 1}`}
-                width={500}
-                height={300}
-                className="w-full object-cover h-[350px] rounded-[30px]"
-              />
-            </motion.div>
-            <motion.div
-              className={`absolute bottom-0 left-0 right-0 ${
-                bgColors[index % bgColors.length]
-              } z-20 flex items-center justify-between  pl-6 font-Tropical font-bold opacity-0`}
-              variants={overlayMotion}
-            >
-              <div>
-                <p className="text-white text-2xl lg:text-md xl:text-2xl 2xl:text-3xl  uppercase">
-                  Thomas Lossie
-                </p>
-                <p className="text-white text-xl  lg:text-lg xl:text-xl uppercase">
-                  Designer
-                </p>
-              </div>
-              <motion.button
-                className="flex items-center text-white text-sm xl:text-md mr-4 border rounded-full p-1 xl:p-4 font-semibold overflow-hidden relative"
-                initial="rest"
-                whileHover="hover"
-                animate="rest"
-              >
-                <span>{t('buttonProject')}</span>
-                <div className="relative mr-4 xl:mr-2 w-6 h-6">
-                  <motion.span className="absolute" variants={arrowOutMotion}>
-                    <ArrowUpRightIcon className="w-6 h-6 text-white" />
-                  </motion.span>
-                  <motion.span className="absolute" variants={arrowInMotion}>
-                    <ArrowUpRightIcon className="w-6 h-6 text-white" />
-                  </motion.span>
-                </div>
-              </motion.button>
-            </motion.div>
-          </motion.div>
-        ))}
+            <span>{t('buttonProject')}</span>
+            <div className="relative mr-4 xl:mr-2 w-6 h-6">
+              <motion.span className="absolute" variants={arrowOutMotion}>
+                <ArrowUpRightIcon className="w-6 h-6 text-white" />
+              </motion.span>
+              <motion.span className="absolute" variants={arrowInMotion}>
+                <ArrowUpRightIcon className="w-6 h-6 text-white" />
+              </motion.span>
+            </div>
+          </motion.button>
+        </motion.div>
+      </motion.div>
+    </Link>
+  ))}
       </div>
       <button className="bg-[#ecebeb] font-Tropical  text-[17px] font-semibold  text-black rounded-full px-6 py-3 mt-14">
-      {t('buttonallproject')}
+        {t("buttonallproject")}
       </button>
     </div>
   );

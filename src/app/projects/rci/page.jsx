@@ -5,19 +5,22 @@ import Image from "next/image";
 import SmoothScrool from "@/utils/SmoothScrool";
 
 export default function Page() {
-  const text = "Thomas Lossie";
+  const text = "R.C.I";
   const lines = [
-    "Première ligne de texte texte texte texte texte texte texte texte text texte texte texte texte texte texte texte texte ",
-    "Première ligne de texte texte texte texte texte texte texte texte text texte texte texte texte texte texte texte texte",
-    "Première ligne de texte texte texte texte texte texte texte texte text texte texte texte texte texte texte texte texte",
+    "Création d’un site web dynamique pour un expert en optimisation énergétique et .",
+    "inspection des installations. Mise en place de fonctionnalités sur mesure, ",
+    "avec un espace dédié à ses services pour faciliter l'engagement des clients. ",
+    "Résultat : une augmentation notable de la visibilité et une fidélisation accrue ",
+    "grâce à une plateforme performante et orientée solutions."
   ];
+  
 
   // Définition des URLs des images
   const imageUrls = [
-    "/TL/Tl1.png",
-    "/TL/Tl2.png",
-    "/TL/Tl3.png",
-    "/TL/Tl4.png",
+    "/rci/rci1.png",
+    "/rci/rci2.png",
+    "/rci/rci3.png",
+    "/rci/rci4.png",
   ];
 
   // Référence et détection de la visibilité de la vidéo
@@ -85,7 +88,7 @@ export default function Page() {
 
         <div className="relative h-[100vh] bg-center z-0">
           <Image
-            src="/TL.png"
+            src="/RCi.png"
             alt="Background Image"
             layout="fill"
             objectFit="cover"
@@ -96,16 +99,16 @@ export default function Page() {
         <div className="relative h-[50vh] md:h-[110vh] z-10">
           <video
             ref={videoRef}
-            src="/TL.mov" // Changez le fichier à un format compatible, comme .mp4
+            src="/rci/rci.mov" // Changez le fichier à un format compatible, comme .mp4
             width="100%"
             height="100%"
             loop
             muted
-            className="w-full object-contain absolute bg-gradient-to-b from-black to-[rgb(20,22,39)] md:h-full top-0 left-0"
+            className="w-full object-contain absolute bg-gradient-to-b from-stone-100  md:h-full top-0 left-0"
           ></video>
         </div>
       </SmoothScrool>
-      <div className="flex flex-wrap flex-col md:flex-row pb-10 pt-24 w-full bg-[rgb(20,22,39)] relative z-20 justify-center gap-24">
+      <div className="flex flex-wrap flex-col md:flex-row pb-10 pt-24 w-full bg-[#ecebeb] relative z-20 justify-center gap-24">
         {imageUrls.map((url, i) => (
           <div key={i} className="w-full md:w-[40%] h-[50vh] relative">
             <Image
