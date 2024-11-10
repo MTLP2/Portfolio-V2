@@ -6,6 +6,7 @@ import { getLocale, getMessages } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { metadata as createMetadata } from './metada'; // Adjust path to your metadata file
 import { cookies } from 'next/headers'; // Import cookies API
+import { Analytics } from '@vercel/analytics/react'; // Import Vercel Analytics
 
 export async function generateMetadata({ params }) {
   const locale = cookies().get('NEXT_LOCALE')?.value || 'fr'; // Get locale from cookies or default to 'fr'
@@ -33,7 +34,6 @@ export async function generateMetadata({ params }) {
   };
 }
 
-
 const Layout = async ({ children }) => {
   const locale = await getLocale();
   const messages = await getMessages(locale); // Assure-toi que tes messages sont bien chargés en fonction de la langue
@@ -45,6 +45,7 @@ const Layout = async ({ children }) => {
           <Header />
           <main>{children}</main>
           <Footer />
+          <Analytics /> {/* Add Vercel Analytics component */}
         </NextIntlClientProvider>
       </body>
     </html>
