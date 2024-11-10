@@ -7,7 +7,6 @@
   "HeroComponent": {
     "mainText": "A chameleon             developer who             adapts to                    anything"
   },
-
   "ProjectComponent": {
     "buttonProject": "View More",
     "buttonallproject": "View All Projects",
@@ -25,7 +24,6 @@
     "Line3": "that make a difference. I’ve had the opportunity to create ",
     "Line3_2": "the freedom this career offers and meeting interesting people."
   },
-
   "PhotoComponent": {
     "Maintxt": "I'm always excited to discuss new projects and collaboration opportunities. Feel free to reach out and let’s work together on amazing projects."
   },
@@ -34,5 +32,37 @@
     "Subtxt": "talk about it",
     "buttonTxt": "Contact Me",
     "copyrigth": "Created and Designed by Me"
+  },
+  "RCI": {
+    "line1": "Creation of a dynamic website for an expert in energy optimization and.",
+    "line2": "Installation inspections. Implementation of customized features,",
+    "line3": "with a dedicated space for services to facilitate client engagement.",
+    "line4": "Result: a significant increase in visibility and increased client retention",
+    "line5": "thanks to a high-performance, solution-oriented platform."
+  },
+  "Sibane": {
+    "line1": "Creation of a website for a diagnostician with over 20 years of experience.",
+    "line2": "We integrated a personalized quote simulator that transformed his site",
+    "line3": "into a powerful conversion tool. The result? Retention of over a dozen",
+    "line4": "additional clients, while reinforcing his image as a leader in the field."
+  },
+  "HelloDash": {
+    "line1": "Implementation of a complete dashboard for our clients, a true CMS designed for",
+    "line2": "flexibility and autonomy. Through this dashboard, they can create unlimited pages,",
+    "line3": "customize every aspect of their site, and easily manage their content. With an",
+    "line4": "integrated blog generator, over 50 articles have already been published by our clients,",
+    "line5": "and a notification system keeps them informed in real-time."
+  },
+  "ThomasLossie": {
+    "line1": "Creation of a website for an art director, a polished project submitted to Awwwards!",
+    "line2": "Our client saw a 50% increase in online visibility, putting his work in the spotlight.",
+    "line3": "This project allowed him to connect with new clients",
+    "line4": "and showcase his work to a wider audience."
+  },
+  "DiagInnov": {
+    "line1": "Design of a unique website for a diagnostician, with a dynamic and colorful cartoon aesthetic.",
+    "line2": "The site offers a captivating visual experience, ideal for standing out",
+    "line3": "in the real estate diagnostics sector. Thanks to this original design,",
+    "line4": "our client easily grabs attention and engages visitors at first glance."
   }
 }

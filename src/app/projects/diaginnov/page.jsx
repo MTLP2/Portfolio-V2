@@ -3,14 +3,17 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import SmoothScrool from "@/utils/SmoothScrool";
+import { useTranslations } from "next-intl";
 
 export default function Page() {
+  const t = useTranslations("DiagInnov");
   const text = "DiagInnov";
   const lines = [
-    "Conception d'un site web unique pour un diagnostiqueur, avec une direction artistique ",
-    "cartoon dynamique et colorée. Le site offre une expérience visuelle captivante, idéale",
-    "pour se démarquer dans le secteur des diagnostics immobiliers. Grâce à ce design  ",
-    "original, notre client attire facilement l'attention et engage ses visiteurs dès le premier coup d'œil."
+    t("line1"),
+    t("line2"),
+    t("line3"),
+    t("line4"),
+
   ];
   
 

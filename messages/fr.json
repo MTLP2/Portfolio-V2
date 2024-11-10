@@ -35,5 +35,38 @@
     "Subtxt": "en discute",
     "buttonTxt": "Contactez-moi",
     "copyrigth": "Créer et Designer par Moi"
+  },
+  "RCI": {
+    "line1": "Création d’un site web dynamique pour un expert en optimisation énergétique et.",
+    "line2": "Inspection des installations. Mise en place de fonctionnalités sur mesure,",
+    "line3": "avec un espace dédié à ses services pour faciliter l'engagement des clients.",
+    "line4": "Résultat : une augmentation notable de la visibilité et une fidélisation accrue",
+    "line5": "grâce à une plateforme performante et orientée solutions."
+  },
+  "Sibane":{
+    "line1": "Création d'un site web pour un diagnostiqueur avec plus de 20 ans d'expérience",
+    "line2": "Nous avons intégré un simulateur de devis personnalisé qui a transformé son site",
+    "line3": "en un outil de conversion puissant. Résultat ? Une fidélisation de plus d'une dizaine",
+    "line4": "de clients supplémentaires, tout en renforçant son image de leader dans le secteur."
+  },
+  "HelloDash": {
+    "line1": "Mise en place d'un dashboard complet pour nos clients, un véritable CMS pensé pour la",
+    "line2": "flexibilité et l’autonomie. Grâce à ce dashboard, ils peuvent créer des pages en illimité,",
+    "line3": "personnaliser chaque aspect de leur site, et gérer facilement leurs contenus. Avec un",
+    "line4": "générateur de blog intégré, plus de 50 articles ont déjà été publiés par nos clients,",
+    "line5": "et un système de notifications les aide à rester informés en temps réel."
+  },
+  "ThomasLossie": {
+    "line1": "Création d'un site web pour un directeur artistique, un projet soigné de bout en bout qui",
+    "line2": "a été soumis à Awwwards ! notre client a vu sa visibilité en ligne augmenter de 50 %,",
+    "line3": "ce qui a mis son travail en lumière. Ce projet lui a permis de rencontrer de nouveaux",
+    "line4": "clients et de présenter ses réalisations à un public élargi."
+  },
+  "DiagInnov": {
+    "line1": "Conception d'un site web unique pour un diagnostiqueur, avec une direction artistique",
+    "line2": "cartoon dynamique et colorée. Le site offre une expérience visuelle captivante, idéale",
+    "line3": "pour se démarquer dans le secteur des diagnostics immobiliers. Grâce à ce design",
+    "line4": "original, notre client attire facilement l'attention et engage ses visiteurs dès le premier coup d'œil."
   }
 }
+

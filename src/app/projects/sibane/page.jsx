@@ -3,14 +3,16 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import SmoothScrool from "@/utils/SmoothScrool";
+import { useTranslations } from "next-intl";
 
 export default function Page() {
+  const t = useTranslations("Sibane");
   const text = "Sibane";
   const lines = [
-    "Création d'un site web pour un diagnostiqueur avec plus de 20 ans d'expérience",
-    "Nous avons intégré un simulateur de devis personnalisé qui a transformé son site ",
-    "en un outil de conversion puissant. Résultat ? Une fidélisation de plus d'une dizaine ",
-    "de clients supplémentaires, tout en renforçant son image de leader dans le secteur."
+    t("line1"),
+    t("line2"),
+    t("line3"),
+    t("line4"),
   ];
   
 

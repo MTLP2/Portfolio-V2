@@ -3,15 +3,18 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import SmoothScrool from "@/utils/SmoothScrool";
+import { useTranslations } from "next-intl";
 
 export default function Page() {
+  const t = useTranslations("HelloDash");
   const text = "Hellodash";
   const lines = [
-    "Mise en place d'un dashboard complet pour nos clients, un véritable CMS pensé pour la ",
-    "flexibilité et l’autonomie. Grâce à ce dashboard, ils peuvent créer des pages en illimité, ",
-    "personnaliser chaque aspect de leur site, et gérer facilement leurs contenus. Avec un  ",
-    "générateur de blog intégré, plus de 50 articles ont déjà été publiés par nos clients,   ",
-    "et un système de notifications les aide à rester informés en temps réel."
+    t("line1"),
+    t("line2"),
+    t("line3"),
+    t("line4"),
+    t("line5"),
+
   ];
 
   // Définition des URLs des images

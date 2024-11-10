@@ -3,15 +3,19 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import SmoothScrool from "@/utils/SmoothScrool";
+import { useTranslations } from "next-intl";
 
 export default function Page() {
+  const t = useTranslations("ThomasLossie");
   const text = "Thomas Lossie";
   const lines = [
-    "Création d'un site web pour un directeur artistique, un projet soigné de bout en bout qui ",
-    "a été soumis à Awwwards ! notre client a vu sa visibilité en ligne augmenter de 50 %, ",
-    " ce qui a mis son travail en lumière. Ce projet lui a permis de rencontrer de nouveaux ",
-    " clients  et de présenter ses réalisations à un public élargi."
+    t("line1"),
+    t("line2"),
+    t("line3"),
+    t("line4"),
+
   ];
+
   
 
   // Définition des URLs des images

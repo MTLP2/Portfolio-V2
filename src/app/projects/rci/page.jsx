@@ -3,15 +3,16 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import SmoothScrool from "@/utils/SmoothScrool";
+import { useTranslations } from "next-intl";
 
 export default function Page() {
+  const t = useTranslations("RCI");
   const text = "R.C.I";
   const lines = [
-    "Création d’un site web dynamique pour un expert en optimisation énergétique et .",
-    "inspection des installations. Mise en place de fonctionnalités sur mesure, ",
-    "avec un espace dédié à ses services pour faciliter l'engagement des clients. ",
-    "Résultat : une augmentation notable de la visibilité et une fidélisation accrue ",
-    "grâce à une plateforme performante et orientée solutions."
+    t("line1"),
+    t("line2"),
+    t("line3"),
+    t("line4"),
   ];
   
 
