@@ -3,47 +3,44 @@
     "workprofile": "Développeur web",
     "location": "Localisation",
     "Language": "Langue"
-
   },
   "HeroComponent": {
     "mainText": "Un développeur        caméléon qui             s'adapte à                    tout"
   },
-
   "ProjectComponent": {
     "buttonProject": "Voir plus",
     "buttonallproject": "Voir tous les projets",
-    "MainTitleProject": "projets    terminés",
+    "MainTitleProject": "projets     terminés",
     "subTitleProject": "Découvrez",
-    "descProject1": "En 10 ans nous avons",
-    "descProject2": "implanter plus de",
-    "descProject3": "400+ sites, voici certains d'eux:"
+    "descProject1": "Avec Passions,  ",
+    "descProject2": "j'ai créé plus de",
+    "descProject3": "10 projets uniques, en voici quelques-uns :"
   },
   "AboutComponent": {
     "Line1": "Bonjour, je suis Mathéo Lopes, développeur web freelance basé à Paris.",
-    "Line1_2": " des partenariats avec des professionnels de divers domaines, ",
-    "Line2": " Mon parcours est ancré dans le développement, mais enrichi d’expériences ",
-    "Line2_2": " comme l’immobilier, et de collaborer avec des équipes,  j’apprécie surtout la ",
-    "Line3": "uniques qui font la différence. J’ai eu l’opportunité de créer  ",
-    "Line3_2": "liberté que ce métier m’offre et rencontrer des personnes intéressante "
+    "Line1_2": "des partenariats avec des professionnels de divers domaines,",
+    "Line2": "Mon parcours est ancré dans le développement, mais enrichi d’expériences",
+    "Line2_2": "comme l’immobilier, et de collaborations avec des équipes. J’apprécie surtout la",
+    "Line3": "unicité de chaque projet qui fait la différence. J’ai eu l’opportunité de créer",
+    "Line3_2": "la liberté que ce métier m’offre et de rencontrer des personnes intéressantes"
   },
-
   "PhotoComponent": {
-    "Maintxt": "Je suis toujours exité de discuter de nouveaux projet et de collaborer sur de nouvelles opportunités. N'hésitez pas à me contacter et capturons ensemble de beaux moments, n'hésiter pas à me contacter et travaillons ensemble sur de magnifiqiue projet"
+    "Maintxt": "Je suis toujours excité de discuter de nouveaux projets et de collaborer sur de nouvelles opportunités. N'hésitez pas à me contacter et capturons ensemble de beaux moments, n'hésitez pas à me contacter et travaillons ensemble sur de magnifiques projets"
   },
   "footerComponent": {
     "Maintxt": "Prêt ? On",
     "Subtxt": "en discute",
     "buttonTxt": "Contactez-moi",
-    "copyrigth": "Créer et Designer par Moi"
+    "copyrigth": "Créé et Designé par Moi"
   },
   "RCI": {
-    "line1": "Création d’un site web dynamique pour un expert en optimisation énergétique et.",
+    "line1": "Création d’un site web dynamique pour un expert en optimisation énergétique.",
     "line2": "Inspection des installations. Mise en place de fonctionnalités sur mesure,",
     "line3": "avec un espace dédié à ses services pour faciliter l'engagement des clients.",
     "line4": "Résultat : une augmentation notable de la visibilité et une fidélisation accrue",
     "line5": "grâce à une plateforme performante et orientée solutions."
   },
-  "Sibane":{
+  "Sibane": {
     "line1": "Création d'un site web pour un diagnostiqueur avec plus de 20 ans d'expérience",
     "line2": "Nous avons intégré un simulateur de devis personnalisé qui a transformé son site",
     "line3": "en un outil de conversion puissant. Résultat ? Une fidélisation de plus d'une dizaine",
@@ -58,7 +55,7 @@
   },
   "ThomasLossie": {
     "line1": "Création d'un site web pour un directeur artistique, un projet soigné de bout en bout qui",
-    "line2": "a été soumis à Awwwards ! notre client a vu sa visibilité en ligne augmenter de 50 %,",
+    "line2": "a été soumis à Awwwards ! Notre client a vu sa visibilité en ligne augmenter de 50 %,",
     "line3": "ce qui a mis son travail en lumière. Ce projet lui a permis de rencontrer de nouveaux",
     "line4": "clients et de présenter ses réalisations à un public élargi."
   },
@@ -69,4 +66,3 @@
     "line4": "original, notre client attire facilement l'attention et engage ses visiteurs dès le premier coup d'œil."
   }
 }
-

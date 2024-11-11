@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 const Header = () => {
   const [time, setTime] = useState("");
@@ -54,12 +55,12 @@ const Header = () => {
   return (
     <header className="py-4 fixed w-full top-0 z-50 flex justify-between gap-5 items-start text-sm px-4 lg:px-44 backdrop-filter bg-opacity-60 mix-blend-difference ">
       {/* Left Section: Name and Title */}
-      <div className="flex flex-col text-white dark:text-gray-200">
+      <Link href={'/'} className="flex flex-col text-white dark:text-gray-200">
         <span className="font-semibold font-Tropical text-xl md:text-2xl">
           Mathéo Lopes:
         </span>
         <span className="font-bold md:text-lg"> {t("workprofile")}</span>
-      </div>
+      </Link>
 
       {/* Middle Section: Location */}
       <div className="flex flex-col text-white dark:text-gray-200">
