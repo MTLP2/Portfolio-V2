@@ -31,7 +31,7 @@ const Hero = () => {
         ))}
       </h1>
       <motion.img
-        className="absolute object-contain  lg:w-[500px] xl:w-[1050px] lg:h-[400px] xl:h-[700px] right-0 bottom-36 md:bottom-0 z-10 rounded-l-[80px] "
+        className="absolute object-contain  md:w-[500px] lg:w-[500px] xl:w-[1050px] lg:h-[400px] xl:h-[700px] right-0 bottom-36 md:bottom-0 z-10 rounded-l-[80px] "
         src="/profiles.png"
         alt=""
         initial={{ opacity: 0, y: 50, scale: 0.9 }} // Animation d'apparition initiale
