@@ -23,8 +23,8 @@ const Footer = () => {
                     <div className="flex items-end justify-between w-full">
                         <div className="flex items-end">
                             <img
-                                className="h-52 lg:h-96 w-[50%] md:w-[50%] ml-2 md:ml-0 rounded-[40px]"
-                                src="/profile.webp"
+                                className="h-52 lg:h-96 w-[60%] md:w-[30%] ml-2 md:ml-0 rounded-[40px] "
+                                src="/profiles.png"
                                 alt="Profile"
                             />
                             <div className="flex flex-col md:flex-row items-end">

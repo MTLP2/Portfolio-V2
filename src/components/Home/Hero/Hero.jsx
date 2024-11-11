@@ -31,8 +31,8 @@ const Hero = () => {
         ))}
       </h1>
       <motion.img
-        className="absolute lg:w-[500px] xl:w-[1050px] lg:h-[400px] xl:h-[700px] right-0 bottom-36 md:bottom-0 z-10 rounded-l-[80px] scale-110"
-        src="/profile.webp"
+        className="absolute object-contain  lg:w-[500px] xl:w-[1050px] lg:h-[400px] xl:h-[700px] right-0 bottom-36 md:bottom-0 z-10 rounded-l-[80px] "
+        src="/profiles.png"
         alt=""
         initial={{ opacity: 0, y: 50, scale: 0.9 }} // Animation d'apparition initiale
         animate={{ opacity: 1, y: 0, scale: 1 }} // Animation d'apparition
@@ -40,8 +40,9 @@ const Hero = () => {
           duration: 1,
           ease: "easeOut",
         }}
-        style={{
+        style={{  
           y: translateY, // Utilise Framer Motion pour l'animation de défilement
+          
         }}
       />
     </div>
