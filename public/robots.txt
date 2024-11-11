@@ -10,4 +10,4 @@ Disallow: /private-page
 Host: https://matheolopes.com
 
 # Sitemaps
-Sitemap: https://matheolopes.com/sitemap.xml
+Sitemap: google-site-verification=gK5LOLb797fp4yjDAhXdAXCRSY9vAcpYvZW1hx48J3ogoogle-site-verification=gK5LOLb797fp4yjDAhXdAXCRSY9vAcpYvZW1hx48J3o
