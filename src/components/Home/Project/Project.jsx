@@ -205,7 +205,7 @@ const Project = () => {
                   style={{ display: "inline-block" }}
                 >
                   {char === " " ? (
-                    <div className="  w-full 2xl:mr-[750px] 3xl:mr-[900px]">
+                    <div className="  w-full xl:mr-[600px]  2xl:mr-[800px]">
                       {" "}
                     </div>
                   ) : (
