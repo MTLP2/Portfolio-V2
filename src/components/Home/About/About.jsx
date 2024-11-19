@@ -75,7 +75,7 @@ const AnimatedText = () => {
 
   return (
     <div className="flex items-center relative flex-col dark:bg-[#121212]  h-[300vh] pb-52">
-      <div className="flex w-full flex-col items-center justify-center sticky  mt-[200px] gap-5  font-light font-Tropical top-[30%] ">
+      <div className="flex w-full flex-col items-center justify-center sticky  mt-[200px] gap-5  font-light font-Tropical top-[30%] p-5 ">
         {/* Premier container */}
         <div
           ref={containerRef1}
@@ -92,7 +92,7 @@ const AnimatedText = () => {
         {/* Deuxième container */}
         <div
           ref={containerRef2}
-          className="overflow-hidden w-full md:h-[10vh] text-[20px] md:text-[25px] lg:text-[30px] xl:text-[3vw]  2xl:text-[2.74vw] h-[7vh] xl:pt-8  relative flex justify-center items-center"
+          className="overflow-hidden w-full md:h-[10vh] text-[18px] md:text-[25px] lg:text-[30px] xl:text-[3vw]  2xl:text-[2.74vw] h-[7vh] xl:pt-8  relative flex justify-center items-center"
         >
           <div className="absolute font-bold w-full text-center z-10 dark:text-gray-100  text-gray-800">
             {t("Line2")}

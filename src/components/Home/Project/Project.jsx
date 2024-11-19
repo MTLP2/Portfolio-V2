@@ -185,7 +185,7 @@ const Project = () => {
       <div className="mb-6 flex  flex-col md:flex-row justify-between md:items-end">
         <motion.h2
           ref={h2Ref}
-          className="text-[3.4rem] md:text-[4.375rem]  lg:text-[6.375rem] xl:text-[7.375rem] leading-[1.10] w-[72%] md:w-[58%] lg:w-[54%] xl:w-[50%] 2xl:w-[40%]  font-Tropical font-semibold  dark:text-gray-100"
+          className="text-[2.6rem] md:text-[4.375rem]  lg:text-[6.375rem] xl:text-[7.375rem] leading-[1.10] w-[72%] md:w-[58%] lg:w-[54%] xl:w-[50%] 2xl:w-[40%]  font-Tropical font-semibold  dark:text-gray-100"
           initial={{ opacity: 0, y: 50 }}
           animate={h2Controls}
           custom={(index) => index}
@@ -205,7 +205,7 @@ const Project = () => {
                   style={{ display: "inline-block" }}
                 >
                   {char === " " ? (
-                    <div className="  w-full  xl:mr-[700px]  2xl:mr-[100px]">
+                    <div className="  w-full  mr-[0px]  2xl:mr-[100px]">
                       {" "}
                     </div>
                   ) : (
