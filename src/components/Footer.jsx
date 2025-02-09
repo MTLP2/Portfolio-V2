@@ -18,7 +18,7 @@ const Footer = () => {
     }, []);
 
     return (
-        <div className="absolute -mt-[1000px] h-[145vh] w-full z-0">
+        <div className="absolute -mt-[1000px] h-[145vh] lg:h-[175vh] xl:h-[145vh] w-full z-0">
             <footer className="sticky top-[400px] h-[60vh] w-full text-black dark:text-gray-100 flex items-center xl:px-36">
                 <div className="h-[50vh] flex flex-col justify-end w-full">
                     <div className="flex items-end justify-between w-full">
