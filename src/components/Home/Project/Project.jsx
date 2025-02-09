@@ -132,15 +132,11 @@ const Project = () => {
 
   useEffect(() => {
     if (h2InView) {
-      const splitText = new SplitType(h2Ref.current, { types: "chars" });
-
       h2Controls.start((i) => ({
         opacity: 1,
         y: 0,
         transition: { delay: i * 0.05, duration: 0.5 },
       }));
-
-      return () => splitText.revert();
     }
   }, [h2InView, h2Controls]);
 
@@ -188,33 +184,10 @@ const Project = () => {
           className="text-[2.6rem] md:text-[4.375rem]  lg:text-[6.375rem] xl:text-[7.375rem] leading-[1.10] w-[72%] md:w-[58%] lg:w-[54%] xl:w-[50%] 2xl:w-[40%]  font-Tropical font-semibold  dark:text-gray-100"
           initial={{ opacity: 0, y: 50 }}
           animate={h2Controls}
-          custom={(index) => index}
+
         >
-          {t("MainTitleProject")
-            .split("")
-            .map((char, index) => (
-              <span
-                key={index}
-                className="inline-block overflow-hidden"
-                style={{ display: "inline-block" }}
-              >
-                <motion.span
-                  custom={index}
-                  initial={{ y: "100%" }}
-                  animate={h2Controls}
-                  style={{ display: "inline-block" }}
-                >
-                  {char === " " ? (
-                    <div className="  w-full  mr-[40px]  2xl:mr-[100px]">
-                      {" "}
-                    </div>
-                  ) : (
-                    char
-                  )}{" "}
-                  {/* Insertion de <br /> pour le retour à la ligne */}
-                </motion.span>
-              </span>
-            ))}
+          {t("MainTitleProject")}
+
         </motion.h2>
         <motion.p
           ref={pRef}
