@@ -31,7 +31,7 @@ const Footer = () => {
                                 alt="Profile"
                             />
                             <div className="flex flex-col md:flex-row items-end">
-                                <p className="text-[6vw] md:text-[5.74vw] leading-[1] w-[120%] font-Tropical ml-4 mb-0">
+                                <p className="text-[6vw] md:text-[5.74vw] leading-[1] w-[120%] font-Tropical ml-4 mb-0 dark:text-gray-100">
                                     {t("Maintxt")} <br /> {t("Subtxt")}
                                 </p>
                                 <a
@@ -44,8 +44,8 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex justify-between w-full mt-4 px-4">
-                        <p className="text-sm">&copy; {currentYear} Mathéo Lopes</p>
+                    <div className="flex justify-between w-full mt-4 px-4 ">
+                        <p className="text-sm dark:text-gray-100">&copy; {currentYear} Mathéo Lopes</p>
                         <p className="text-sm">{t("copyrigth")}</p>
                     </div>
                 </div>

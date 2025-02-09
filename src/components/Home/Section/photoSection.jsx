@@ -65,7 +65,7 @@ const PhotoSection = () => {
             </a>
           </li>
           <li>
-            <p href="#project3" className="hover:underline">
+            <p href="#project3" className="hover:underline dark:text-gray-100">
               math.lp.dev@gmail.com
             </p>
           </li>

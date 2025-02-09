@@ -20,6 +20,7 @@ const Page = () => {
         <Project/>
       </SmoothScroll>
         <PhotoSection/>
+        <a target="_blank" href="/Resume.pdf"  className=" fixed p-4 border-solid bottom-4 right-4 font-Tropical text-red-500 border-red-500 border-2 rounded-xl hover:bg-red-100 transition-colors "> Resume</a>
 
     </div>
   );

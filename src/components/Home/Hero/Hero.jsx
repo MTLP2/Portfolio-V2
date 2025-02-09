@@ -28,7 +28,7 @@ const Hero = () => {
         >
           {t("introText")}
         </motion.p>{" "}
-        <h1 className=" text-3xl md:text-6xl font-Tropical  w-full  font-bold">
+        <h1 className=" text-3xl md:text-6xl font-Tropical  w-full  font-bold dark:text-gray-100">
           <div>
             {Array.from(text).map((char, index) => (
               <span key={index} className="inline-block overflow-hidden">
@@ -90,11 +90,13 @@ const Hero = () => {
             damping: 30,
             duration: 0.8,
           }}
-          className="text-xl font-sans font-extralight "
+          className="text-xl dark:text-gray-100 font-sans font-extralight "
         >
           {t("PresText")}
         </motion.p>
-        <motion.button
+        <motion.a
+          href="https://calendly.com/math-lp-dev/30min?back=1&month=2025-02"
+          target="_blank"
           initial={{ y: 20, opacity: 0, scale: 0.95 }}
           animate={{ y: 0, opacity: 1, scale: 1 }}
           transition={{
@@ -103,10 +105,10 @@ const Hero = () => {
             damping: 30,
             duration: 0.8,
           }}
-          className=" p-3 w-[150px] border-2 rounded-lg text-red-500 font-Tropical text-xl border-red-500"
+          className=" p-3 w-[150px] border-2  border-solid rounded-lg text-red-500  hover:bg-red-100 transition-colors font-Tropical text-xl border-red-500 justify-center flex"
         >
           Contact
-        </motion.button>
+        </motion.a>
       </section>
     </div>
   );
