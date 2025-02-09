@@ -44,7 +44,7 @@ const Layout = async ({ children }) => {
         <NextIntlClientProvider messages={messages}>
           <Header />
           <main>{children}</main>
-          <Footer />
+          <Footer/> {/* Hide Footer on mobile */}
           <Analytics /> {/* Add Vercel Analytics component */}
         </NextIntlClientProvider>
       </body>
