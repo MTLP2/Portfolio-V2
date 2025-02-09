@@ -1,50 +1,113 @@
 "use client";
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useTranslations } from 'next-intl';
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
   const { scrollY } = useScroll(); // Récupère la position de défilement
   const translateY = useTransform(scrollY, [0, 1000], [0, -300]); // Ajuste le facteur selon l'intensité souhaitée
 
-  const t = useTranslations('HeroComponent');
-  const text = t('mainText'); // Récupère le texte dynamique
+  const t = useTranslations("HeroComponent");
+  const text = t("mainText"); // Récupère le texte dynamique
+  const subtext = t("subText"); // Récupère le texte dynamique
+  const text2 = t("text2"); // Récupère le texte dynamique
 
-  
   return (
-    <div className="bg-[#ecebeb] dark:bg-[#121212] w-full h-screen flex justify-center relative overflow-hidden">
-      <h1 className="clamped-tex text-[47px] xs:text-[52px] md:text-[100px] xl:text-[100px] 2xl:text-[180px] font-Tropical w-full md:w-[800px] xl:w-[900px]  2xl:w-[1640px] pt-44 leading-none font-light z-40 dark:text-gray-100">
-        {Array.from(text).map((char, index) => (
-          <span key={index} className="inline-block overflow-hidden">
-            <motion.span
-              className="inline-block"
-              initial={{ y: "100%" }}
-              animate={{ y: "0%" }}
-              transition={{
-                delay: index * 0.03,
-                duration: 0.5,
-              }}
-            >
-              {char === " " ? "\u00A0" : char} {/* Gérer les espaces */}
-            </motion.span>
-          </span>
-        ))}
-      </h1>
-      <motion.img
-        className="absolute object-contain  md:w-[500px] lg:w-[500px] xl:w-[1050px] lg:h-[400px] xl:h-[700px] right-0 bottom-36 md:bottom-0 z-10 rounded-l-[80px] "
-        src="/profiles.png"
-        alt=""
-        initial={{ opacity: 0, y: 50, scale: 0.9 }} // Animation d'apparition initiale
-        animate={{ opacity: 1, y: 0, scale: 1 }} // Animation d'apparition
-        transition={{
-          duration: 1,
-          ease: "easeOut",
-        }}
-        style={{  
-          y: translateY, // Utilise Framer Motion pour l'animation de défilement
-          
-        }}
-      />
+    <div className="bg-[#ecebeb] dark:bg-[#121212] w-full h-screen justify-center relative overflow-hidden">
+      <section className="flex flex-col gap-12  justify-center h-full  mx-2 lg:mx-44  xl:mx-80">
+        <motion.p
+          initial={{ y: 100, opacity: 0, scale: 0.95 }}
+          animate={{ y: 0, opacity: 1, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 120,
+            damping: 15,
+            duration: 0.8,
+          }}
+          className="text-xl font-sans font-extralight text-red-500"
+        >
+          {t("introText")}
+        </motion.p>{" "}
+        <h1 className=" text-3xl md:text-6xl font-Tropical  w-full  font-bold">
+          <div>
+            {Array.from(text).map((char, index) => (
+              <span key={index} className="inline-block overflow-hidden">
+                <motion.span
+                  className="inline-block"
+                  initial={{ y: "100%" }}
+                  animate={{ y: "0%" }}
+                  transition={{
+                    delay: index * 0.03,
+                    duration: 0.5,
+                  }}
+                >
+                  {char === " " ? "\u00A0" : char} {/* Gérer les espaces */}
+                </motion.span>
+              </span>
+            ))}
+          </div>
+          <div>
+            {Array.from(subtext).map((char, index) => (
+              <span key={index} className="inline-block overflow-hidden">
+                <motion.span
+                  className="inline-block"
+                  initial={{ y: "100%" }}
+                  animate={{ y: "0%" }}
+                  transition={{
+                    delay: index * 0.03,
+                    duration: 0.5,
+                  }}
+                >
+                  {char === " " ? "\u00A0" : char} {/* Gérer les espaces */}
+                </motion.span>
+              </span>
+            ))}
+          </div>
+          <div>
+            {Array.from(text2).map((char, index) => (
+              <span key={index} className="inline-block overflow-hidden">
+                <motion.span
+                  className="inline-block"
+                  initial={{ y: "100%" }}
+                  animate={{ y: "0%" }}
+                  transition={{
+                    delay: index * 0.03,
+                    duration: 0.5,
+                  }}
+                >
+                  {char === " " ? "\u00A0" : char} {/* Gérer les espaces */}
+                </motion.span>
+              </span>
+            ))}
+          </div>
+        </h1>
+        <motion.p
+          initial={{ y: 20, opacity: 0, scale: 0.95 }}
+          animate={{ y: 0, opacity: 1, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 120,
+            damping: 30,
+            duration: 0.8,
+          }}
+          className="text-xl font-sans font-extralight "
+        >
+          {t("PresText")}
+        </motion.p>
+        <motion.button
+          initial={{ y: 20, opacity: 0, scale: 0.95 }}
+          animate={{ y: 0, opacity: 1, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 120,
+            damping: 30,
+            duration: 0.8,
+          }}
+          className=" p-3 w-[150px] border-2 rounded-lg text-red-500 font-Tropical text-xl border-red-500"
+        >
+          Contact
+        </motion.button>
+      </section>
     </div>
   );
 };

@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const Footer = () => {
     const [scrollY, setScrollY] = useState(0);
@@ -22,9 +23,11 @@ const Footer = () => {
                 <div className="h-[50vh] flex flex-col justify-end w-full">
                     <div className="flex items-end justify-between w-full">
                         <div className="flex items-end">
-                            <img
-                                className="h-52 lg:h-96 w-[60%] md:w-[30%] ml-2 md:ml-0 rounded-[40px] "
-                                src="/profiles.png"
+                            <Image
+                                width={400}
+                                height={700}
+                                className="h-52 xl:h-96 w-[60%] md:w-[30%] ml-2 md:ml-0 rounded-[40px] "
+                                src="/footer.jpg"
                                 alt="Profile"
                             />
                             <div className="flex flex-col md:flex-row items-end">

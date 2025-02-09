@@ -5,7 +5,11 @@
     "Language": "Langue"
   },
   "HeroComponent": {
-    "mainText": "Un développeur        caméléon qui             s'adapte à                    tout"
+    "mainText": "Lopes Mathéo.",
+    "PresText": "Je suis un Software Enginner basé à Paris (France)",
+    "subText": "Code, design et rapidité ",
+    "text2": "mon trio gagnant.",
+    "introText": "Hey, je m'appelle"
   },
   "ProjectComponent": {
     "buttonProject": "Voir plus",
@@ -17,12 +21,13 @@
     "descProject3": "10 projets uniques, en voici quelques-uns :"
   },
   "AboutComponent": {
-    "Line1": "Bonjour, je suis Mathéo Lopes, développeur web freelance basé à Paris.",
-    "Line1_2": "des partenariats avec des professionnels de divers domaines,",
-    "Line2": "Mon parcours est ancré dans le développement, mais enrichi d’expériences",
-    "Line2_2": "comme l’immobilier, et de collaborations avec des équipes. J’apprécie surtout la",
-    "Line3": "unique de chaque projet qui fait la différence. J’ai eu l’opportunité de créer",
-    "Line3_2": "la liberté que ce métier m’offre et de rencontrer des personnes intéressantes"
+    "Line1": "Hello ! Je suis Mathéo , un Software Engineer à Paris, France",
+    "Line2": "J’ai toujours été fasciné par la tech et l’IT. ",
+    "Line3": "Depuis que j’ai découvert la programmation, j’adore créer des choses,que ce soit des sites web, des applications, des logiciels… oumême des projets totalement inutiles, mais fun !",
+    "Line4": "J'ai eu la chance de finir une formation en développement web chez OpenClassrooms, où j’ai acquis une expertise technique solide en appliquant mes connaissances à des projets concrets.",
+    "Line5": "Fort de ces compétences, j’ai co-fondé mon entreprise avec un associé en me spécialisant dans les solutions web pour l’immobilier. Nous avons collaboré avec des diagnostiqueurs, des partenaires médias et des éditeurs de logiciels métiers sur des projets d’envergure, allant de plateformes SaaS à des outils optimisant l’acquisition de leads et la gestion des données clients.",
+    "Line6": "Aujourd’hui, je me vois comme un développeur impliqué, passionné, curieux et toujours motivé par les défis techniques.",
+    "Line7": "Voici quelques technos avec lesquelles je travaille régulièrement :"
   },
   "PhotoComponent": {
     "Maintxt": "Je suis toujours excité de discuter de nouveaux projets et de collaborer sur de nouvelles opportunités. N'hésitez pas à me contacter et capturons ensemble de beaux moments, n'hésitez pas à me contacter et travaillons ensemble sur de magnifiques projets"

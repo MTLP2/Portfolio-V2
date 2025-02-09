@@ -4,9 +4,13 @@
     "location": "Location",
     "Language": "Language"
   },
-  "HeroComponent": {
-    "mainText": "A chameleon             developer who             adapts to                    anything"
-  },
+"HeroComponent": {
+    "mainText": "Lopes Mathéo.",
+    "PresText": "I'm a Software Engineer based in Paris, France.",
+    "subText": "Code, design, and speed.",
+    "text2": "My winning trio.",
+    "introText": "Hey, my name is"
+},  
   "ProjectComponent": {
     "buttonProject": "View More",
     "buttonallproject": "View All Projects",
@@ -16,14 +20,15 @@
     "descProject2": "crafted over",
     "descProject3": "10 unique projects — here are a few:"
   },
-  "AboutComponent": {
-    "Line1": "Hello, I’m Mathéo Lopes, a freelance web developer based in Paris.",
-    "Line1_2": " partnerships with professionals in various fields, ",
-    "Line2": " My background is rooted in development, but enriched by experiences ",
-    "Line2_2": " like real estate, working with teams; I especially appreciate ",
-    "Line3": "that make a difference. I’ve had the opportunity to create ",
-    "Line3_2": "the freedom this career offers and meeting interesting people."
-  },
+"AboutComponent": {
+    "Line1": "Hello! I'm Mathéo, a Software Engineer based in Paris, France.",
+    "Line2": "I've always been fascinated by tech and IT.",
+    "Line3": "Since discovering programming, I've loved creating things—whether it's websites, applications, software, or even completely useless but fun projects!",
+    "Line4": "I had the opportunity to complete a web development program at OpenClassrooms, where I gained solid technical expertise by applying my knowledge to real-world projects.",
+    "Line5": "With these skills, I co-founded my own company with a partner, specializing in web solutions for the real estate sector. We have collaborated with property inspectors, media partners, and business software publishers on large-scale projects, ranging from SaaS platforms to tools that optimize lead acquisition and client data management.",
+    "Line6": "Today, I see myself as a dedicated, passionate, and curious developer, always motivated by technical challenges.",
+    "Line7": "Here are some of the technologies I work with regularly:"
+},
   "PhotoComponent": {
     "Maintxt": "I'm always excited to discuss new projects and collaboration opportunities. Feel free to reach out and let’s work together on amazing projects."
   },

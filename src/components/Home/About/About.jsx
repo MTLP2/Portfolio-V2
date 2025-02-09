@@ -1,124 +1,81 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useTranslations } from "next-intl";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const AnimatedText = () => {
+const About = () => {
+  // Contrôle de l'animation du hr
+  const hrControls = useAnimation();
+  // Récupération de la traduction
   const t = useTranslations("AboutComponent");
-  const containerRef1 = useRef(null);
-  const containerRef2 = useRef(null);
-  const containerRef3 = useRef(null);
-  const cible = useRef(null);
-
-  useEffect(() => {
-    const animateContainer = (container) => {
-      if (container.current && container.current.children.length >= 2) {
-        const [text1, text2] = container.current.children;
-
-        // Configure overflow hidden pour le conteneur
-        gsap.set(container.current, { overflow: "hidden" });
-
-        // Premier texte monte et se cache
-        gsap.fromTo(
-          text1,
-          { y: "0%" },
-          {
-            y: "-150%",
-            duration: 1,
-            ease: "power3.out",
-            scrollTrigger: {
-              trigger: cible.current,
-              start: "top 80%",
-              end: "bottom 70%",
-              scrub: true,
-              toggleActions: "play none reverse none",
-            },
-          }
-        );
-
-        // Deuxième texte monte pour devenir visible
-        gsap.fromTo(
-          text2,
-          { y: "100%" },
-          {
-            y: "0%",
-            duration: 1,
-            ease: "power3.out",
-            scrollTrigger: {
-              trigger: cible.current,
-              start: "top 80%",
-              end: "bottom 70%",
-              scrub: true,
-              toggleActions: "play none reverse none",
-            },
-          }
-        );
-      }
-    };
-
-    // Applique l'animation pour chaque conteneur
-    [containerRef1, containerRef2, containerRef3].forEach(animateContainer);
-
-    // Met à jour les animations lors du redimensionnement de la fenêtre
-    const resizeHandler = () => {
-      ScrollTrigger.refresh();
-    };
-    window.addEventListener("resize", resizeHandler);
-
-    return () => {
-      window.removeEventListener("resize", resizeHandler);
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill()); // Nettoyage
-    };
-  }, []);
 
   return (
-    <div className="flex items-center relative flex-col dark:bg-[#121212]  h-[300vh] pb-52">
-      <div className="flex w-full flex-col items-center justify-center sticky  mt-[200px] gap-5  font-light font-Tropical top-[30%] p-5 ">
-        {/* Premier container */}
-        <div
-          ref={containerRef1}
-          className="overflow-hidden  w-full text-[20px] md:text-[25px] lg:text-[30px] xl:text-[3vw] 2xl:text-[2.74vw] h-[7vh] md:h-[10vh] xl:pt-8 relative flex justify-center items-center"
-        >
-          <div className="absolute font-bold w-full text-center  z-10 dark:text-gray-100  text-gray-800">
+    <section className="flex flex-col gap-5 justify-center mx-2 lg:mx-40 xl:mx-80">
+      <div className="w-full flex gap-6 flex-col lg:flex-row items-center justify-center">
+        <div className="flex flex-col gap-4 md:w-[45%] xl:w-[45%]">
+          <div className="flex items-center gap-4">
+            <h2 className="text-2xl font-Tropical font-black dark:text-gray-100">Qui suis-je ? </h2>
+            <hr className="border-black w-28 md:w-80 dark:border-gray-100" />
+          </div>
+          <p className="text-lg leading-6 font-sans font-extralight lg:w-[90%] text-[#2c0f0f]  dark:text-gray-100">
             {t("Line1")}
-          </div>
-          <div className="absolute font-bold z-0 dark:text-gray-100 pt-4 text-gray-800">
-            {t("Line1_2")}
-          </div>
+            <br />
+            <br />
+            {t("Line2")} <br />
+            <br />
+            {t("Line3")}<br />
+            <br />
+            {t("Line4")} <br />
+            <br />
+            {t("Line5")} <br />
+            <br />
+            <br />
+            {t("Line6")}<br />
+            <br />
+            {t("Line7")}<br />
+            <br />
+            <br />
+          </p>
         </div>
-
-        {/* Deuxième container */}
-        <div
-          ref={containerRef2}
-          className="overflow-hidden w-full md:h-[10vh] text-[18px] md:text-[25px] lg:text-[30px] xl:text-[3vw]  2xl:text-[2.74vw] h-[7vh] xl:pt-8  relative flex justify-center items-center"
-        >
-          <div className="absolute font-bold w-full text-center z-10 dark:text-gray-100  text-gray-800">
-            {t("Line2")}
-          </div>
-          <div className="absolute font-bold z-0 dark:text-gray-100 pt-4 text-gray-800">
-            {t("Line2_2")}
-          </div>
-        </div>
-
-        {/* Troisième container */}
-        <div
-          ref={containerRef3}
-          className="overflow-hidden w-full md:h-[10vh] text-[20px] md:text-[25px] lg:text-[30px] xl:text-[3vw] 2xl:text-[2.74vw] h-[7vh] xl:pt-8 relative flex justify-center items-center"
-        >
-          <div className="absolute font-bold  w-full text-center z-10 dark:text-gray-100  text-gray-800">
-            {t("Line3")}
-          </div>
-          <div className="absolute font-bold z-0 dark:text-gray-100 pt-4  text-gray-800">
-            {t("Line3_2")}
-          </div>
+        <div className="relative flex md:w-[500px] xl:w-[400px] ">
+          {/* hr animé avec Framer Motion */}
+          <motion.hr
+            initial={{ x: 100 }}
+            animate={hrControls}
+            className=" hidden md:block w-[350px] h-[480px] border-red-400 border-4 rounded-xl absolute top-7 lg:top-24 lg:right-12"
+          />
+          {/* image transformée en motion.img pour gérer le hover */}
+          <motion.img
+            src="/Photo.JPG"
+            alt=""
+            onHoverStart={() =>
+              hrControls.start({ x: 68, y: -20, transition: { duration: 0.5 } })
+            }
+            onHoverEnd={() =>
+              hrControls.start({ x: 98, y: 20, transition: { duration: 0.5 } })
+            }
+            className=" w-full md:w-[400px] lg:w-full xl:w-[500px]  md:grayscale hover:grayscale-0 rounded-xl shadow-xl hover:shadow-2xl transition-shadow h-[500px] z-20"
+          />
         </div>
       </div>
-
-      <div ref={cible} className="bg-red-50 absolute bottom-[50%]"></div>
-    </div>
+      <div>
+        <ul className="flex flex-wrap gap-4 w-[50%] mb-32">
+          <li className="bg-gray-200 p-2 shadow-md rounded-md">HTML & (S)CSS</li>
+          <li className="bg-gray-200 p-2 shadow-md rounded-md">TypeScript</li>
+          <li className="bg-gray-200 p-2 shadow-md rounded-md">Vue.js</li>
+          <li className="bg-gray-200 p-2 shadow-md rounded-md">React.js</li>
+          <li className="bg-gray-200 p-2 shadow-md rounded-md">Next.js</li>
+          <li className="bg-gray-200 p-2 shadow-md rounded-md">Node.js</li>
+          <li className="bg-gray-200 p-2 shadow-md rounded-md">TailwindCSS</li>
+          <li className="bg-gray-200 p-2 shadow-md rounded-md">Firebase</li>
+          <li className="bg-gray-200 p-2 shadow-md rounded-md">Jest</li>
+        </ul>
+      </div>
+    </section>
   );
 };
 
-export default AnimatedText;
+export default About;

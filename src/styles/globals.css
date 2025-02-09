@@ -134,3 +134,7 @@ body {
   @apply dark:bg-[#121212]
 }
 
+
+p, h1, h2, h3, h4, h5, h6 {
+  @apply text-[#2c0f0f] 
+}
