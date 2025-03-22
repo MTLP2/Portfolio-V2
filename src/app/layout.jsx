@@ -2,16 +2,17 @@ import React from "react";
 import Header from "../components/Header";
 import "../styles/globals.css";
 import Footer from "@/components/Footer";
-import { getLocale, getMessages } from 'next-intl/server';
-import { NextIntlClientProvider } from 'next-intl';
-import { metadata as createMetadata } from './metada'; // Adjust path to your metadata file
-import { cookies } from 'next/headers'; // Import cookies API
-import { Analytics } from '@vercel/analytics/react'; // Import Vercel Analytics
+import { getLocale, getMessages } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
+import { metadata as createMetadata } from "./metada"; // Adjust path to your metadata file
+import { cookies } from "next/headers"; // Import cookies API
+import { Analytics } from "@vercel/analytics/react"; // Import Vercel Analytics
+import BurgerMenu from "@/components/BurgerMenu";
 
 export async function generateMetadata({ params }) {
-  const locale = cookies().get('NEXT_LOCALE')?.value || 'fr'; // Get locale from cookies or default to 'fr'
+  const locale = cookies().get("NEXT_LOCALE")?.value || "fr"; // Get locale from cookies or default to 'fr'
   const currentMetadata = createMetadata(locale); // Generate metadata based on locale
-  
+
   return {
     title: currentMetadata.title.default,
     description: currentMetadata.description,
@@ -43,8 +44,9 @@ const Layout = async ({ children }) => {
       <body>
         <NextIntlClientProvider messages={messages}>
           <Header />
+          {/* <BurgerMenu /> */}
           <main>{children}</main>
-          <Footer/> {/* Hide Footer on mobile */}
+          <Footer /> {/* Hide Footer on mobile */}
           <Analytics /> {/* Add Vercel Analytics component */}
         </NextIntlClientProvider>
       </body>
