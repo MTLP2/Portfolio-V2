@@ -17,7 +17,7 @@ const Page = () => {
       <About />
 
       <SmoothScroll>
-        <VideoSection />
+        {/* <VideoSection /> */}
         <Project />
       </SmoothScroll>
       <PhotoSection />
