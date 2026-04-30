@@ -4,23 +4,23 @@
     "location": "Location",
     "Language": "Language"
   },
-"HeroComponent": {
+  "HeroComponent": {
     "mainText": "Lopes Mathéo.",
     "PresText": "I'm a Software Engineer based in Paris, France.",
     "subText": "Code, design, and speed.",
     "text2": "My winning trio.",
     "introText": "Hey, my name is"
-},  
+  },
   "ProjectComponent": {
     "buttonProject": "View More",
     "buttonallproject": "View All Projects",
-    "MainTitleProject": "Completed Projects",
-    "subTitleProject": "Discover",
-    "descProject1": "With Passion, we've",
-    "descProject2": "crafted over",
-    "descProject3": "10 unique projects — here are a few:"
+    "MainTitleProject": "Experience",
+    "subTitleProject": "My",
+    "descProject1": "With Passion, I",
+    "descProject2": "have worked on",
+    "descProject3": " multiple projects:"
   },
-"AboutComponent": {
+  "AboutComponent": {
     "Line1": "Hello! I'm Mathéo, a Software Engineer based in Paris, France.",
     "Line2": "I've always been fascinated by tech and IT.",
     "Line3": "Since discovering programming, I've loved creating things—whether it's websites, applications, software, or even completely useless but fun projects!",
@@ -28,7 +28,7 @@
     "Line5": "With these skills, I co-founded my own company with a partner, specializing in web solutions for the real estate sector. We have collaborated with property inspectors, media partners, and business software publishers on large-scale projects, ranging from SaaS platforms to tools that optimize lead acquisition and client data management.",
     "Line6": "Today, I see myself as a dedicated, passionate, and curious developer, always motivated by technical challenges.",
     "Line7": "Here are some of the technologies I work with regularly:"
-},
+  },
   "PhotoComponent": {
     "Maintxt": "I'm always excited to discuss new projects and collaboration opportunities. Feel free to reach out and let’s work together on amazing projects."
   },

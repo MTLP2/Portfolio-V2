@@ -14,11 +14,11 @@
   "ProjectComponent": {
     "buttonProject": "Voir plus",
     "buttonallproject": "Voir tous les projets",
-    "MainTitleProject": "projets terminés",
-    "subTitleProject": "Découvrez",
+    "MainTitleProject": "Experience",
+    "subTitleProject": "Mon",
     "descProject1": "Avec Passion,  ",
-    "descProject2": "j'ai créé plus de",
-    "descProject3": "10 projets uniques, en voici quelques-uns :"
+    "descProject2": "j'ai travaillé sur",
+    "descProject3": " plusieurs projets:"
   },
   "AboutComponent": {
     "Line1": "Hello ! Je suis Mathéo , un Software Engineer à Paris, France",
