@@ -9,16 +9,22 @@ import Link from "next/link";
 
 const projects = [
   {
+    image: "/diggers.png",
+    title: "Diggers Factory",
+    subtitle: "Startup",
+    link: "https://www.diggersfactory.com/",
+  },
+  {
+    image: "/MPF.png",
+    title: "MPF",
+    subtitle: "IOS App",
+    link: "/projects/diaginnov",
+  },
+  {
     image: "/TL/TLHome.png",
     title: "Thomas Lossie",
     subtitle: "Designer",
     link: "/projects/thomas-lossie",
-  },
-  {
-    image: "/Sibane.png",
-    title: "Sibane",
-    subtitle: "Diagnostics",
-    link: "/projects/sibane",
   },
   {
     image: "/Hellodash.png",
@@ -38,14 +44,7 @@ const projects = [
     subtitle: "Diagnostics",
     link: "/",
   },
-  {
-    image: "/Diaginnov.png",
-    title: "Diaginnov",
-    subtitle: "Diagnostics",
-    link: "/projects/diaginnov",
-  },
 ];
-
 
 // Define animations for the overlay and image
 const overlayMotion = {
@@ -184,10 +183,8 @@ const Project = () => {
           className="text-[2.6rem] md:text-[4.375rem]  lg:text-[6.375rem] xl:text-[7.375rem] leading-[1.10] w-[72%] md:w-[58%] lg:w-[54%] xl:w-[50%] 2xl:w-[40%]  font-Tropical font-semibold  dark:text-gray-100"
           initial={{ opacity: 0, y: 50 }}
           animate={h2Controls}
-
         >
           {t("MainTitleProject")}
-
         </motion.h2>
         <motion.p
           ref={pRef}
@@ -209,59 +206,64 @@ const Project = () => {
         </motion.p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4">
-      {projects.map((project, index) => (
-    <Link key={index} href={project.link} target="_blank" rel="noopener noreferrer">
-      <motion.div
-        className="rounded-[30px] shadow-md overflow-hidden relative"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={projectInViewMotion}
-        whileHover="hover"
-      >
-        <motion.div className="relative z-10" variants={imageMotion}>
-          <Image
-            src={project.image}
-            alt={`Project ${project.title}`}
-            width={500}
-            height={300}
-            className="w-full object-cover h-[350px] rounded-[30px]"
-          />
-        </motion.div>
-        <motion.div
-          className={`absolute bottom-0 left-0 right-0 ${
-            bgColors[index % bgColors.length]
-          } z-20 flex items-center justify-between pl-6 font-Tropical font-bold opacity-0`}
-          variants={overlayMotion}
-        >
-          <div>
-            <p className="text-white text-2xl lg:text-md xl:text-2xl 2xl:text-3xl uppercase">
-              {project.title}
-            </p>
-            <p className="text-white text-xl lg:text-lg xl:text-xl uppercase">
-              {project.subtitle}
-            </p>
-          </div>
-          <motion.button
-            className="flex items-center text-white text-sm xl:text-md mr-4 border rounded-full p-1 xl:p-4 font-semibold overflow-hidden relative"
-            initial="rest"
-            whileHover="hover"
-            animate="rest"
+        {projects.map((project, index) => (
+          <Link
+            key={index}
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <span>{t('buttonProject')}</span>
-            <div className="relative mr-4 xl:mr-2 w-6 h-6">
-              <motion.span className="absolute" variants={arrowOutMotion}>
-                <ArrowUpRightIcon className="w-6 h-6 text-white" />
-              </motion.span>
-              <motion.span className="absolute" variants={arrowInMotion}>
-                <ArrowUpRightIcon className="w-6 h-6 text-white" />
-              </motion.span>
-            </div>
-          </motion.button>
-        </motion.div>
-      </motion.div>
-    </Link>
-  ))}
+            <motion.div
+              className="rounded-[30px] shadow-md overflow-hidden relative"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={projectInViewMotion}
+              whileHover="hover"
+            >
+              <motion.div className="relative z-10" variants={imageMotion}>
+                <Image
+                  src={project.image}
+                  alt={`Project ${project.title}`}
+                  width={500}
+                  height={300}
+                  className="w-full object-cover h-[350px] rounded-[30px]"
+                />
+              </motion.div>
+              <motion.div
+                className={`absolute bottom-0 left-0 right-0 ${
+                  bgColors[index % bgColors.length]
+                } z-20 flex items-center justify-between pl-6 font-Tropical font-bold opacity-0`}
+                variants={overlayMotion}
+              >
+                <div>
+                  <p className="text-white text-2xl lg:text-md xl:text-2xl 2xl:text-3xl uppercase">
+                    {project.title}
+                  </p>
+                  <p className="text-white text-xl lg:text-lg xl:text-xl uppercase">
+                    {project.subtitle}
+                  </p>
+                </div>
+                <motion.button
+                  className="flex items-center text-white text-sm xl:text-md mr-4 border rounded-full p-1 xl:p-4 font-semibold overflow-hidden relative"
+                  initial="rest"
+                  whileHover="hover"
+                  animate="rest"
+                >
+                  <span>{t("buttonProject")}</span>
+                  <div className="relative mr-4 xl:mr-2 w-6 h-6">
+                    <motion.span className="absolute" variants={arrowOutMotion}>
+                      <ArrowUpRightIcon className="w-6 h-6 text-white" />
+                    </motion.span>
+                    <motion.span className="absolute" variants={arrowInMotion}>
+                      <ArrowUpRightIcon className="w-6 h-6 text-white" />
+                    </motion.span>
+                  </div>
+                </motion.button>
+              </motion.div>
+            </motion.div>
+          </Link>
+        ))}
       </div>
     </div>
   );
