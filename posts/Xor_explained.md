@@ -4,9 +4,9 @@ titleEn: "XOR Explained Simply"
 date: "2026-04-30"
 description: "Comprends enfin le XOR : le symbole ⊕ en maths, ^ en code, et comment ça marche bit à bit avec des exemples concrets."
 descriptionEn: "Finally understand XOR: the ⊕ symbol in math, ^ in code, and how it works bit by bit with concrete examples."
-tags: ["xor", "binaire", "programmation", "opérateurs", "maths"]
+tags: ["xor", "binaire", "programmation", "opérateurs", "maths", "Français"]
 author: "Mathéo Lopes"
-authorImage: "/Photo.jpg"
+authorImage: "/Photo.JPG"
 image: "/blog/PrincipeduXOR.png"
 ---
 
