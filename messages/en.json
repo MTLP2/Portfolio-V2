@@ -64,6 +64,17 @@
     "line3": "This project allowed him to connect with new clients",
     "line4": "and showcase his work to a wider audience."
   },
+  "BlogComponent": {
+    "title": "Blog",
+    "viewAll": "View all posts",
+    "readMore": "Read more",
+    "backToBlog": "Back to blog",
+    "recommendations": "Recommended posts",
+    "searchPlaceholder": "Search posts...",
+    "filterByTag": "Filter by tag",
+    "allTags": "All",
+    "noResults": "No posts found."
+  },
   "DiagInnov": {
     "line1": "Design of a unique website for a diagnostician, with a dynamic and colorful cartoon aesthetic.",
     "line2": "The site offers a captivating visual experience, ideal for standing out",

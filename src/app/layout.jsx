@@ -46,7 +46,6 @@ const Layout = async ({ children }) => {
           <Header />
           {/* <BurgerMenu /> */}
           <main>{children}</main>
-          <Footer /> {/* Hide Footer on mobile */}
           <Analytics /> {/* Add Vercel Analytics component */}
         </NextIntlClientProvider>
       </body>

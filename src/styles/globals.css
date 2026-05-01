@@ -136,5 +136,5 @@ body {
 
 
 p, h1, h2, h3, h4, h5, h6 {
-  @apply text-[#2c0f0f] 
+  @apply text-[#2c0f0f] dark:text-gray-100
 }
