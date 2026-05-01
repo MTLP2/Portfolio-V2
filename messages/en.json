@@ -73,7 +73,8 @@
     "searchPlaceholder": "Search posts...",
     "filterByTag": "Filter by tag",
     "allTags": "All",
-    "noResults": "No posts found."
+    "noResults": "No posts found.",
+    "readingTime": "{minutes} min read"
   },
   "DiagInnov": {
     "line1": "Design of a unique website for a diagnostician, with a dynamic and colorful cartoon aesthetic.",

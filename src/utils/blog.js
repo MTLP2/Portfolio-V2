@@ -4,6 +4,11 @@ import matter from "gray-matter";
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
+function getReadingTime(content) {
+  const words = content.trim().split(/\s+/).length;
+  return Math.max(1, Math.round(words / 200));
+}
+
 export function getAllPosts() {
   const fileNames = fs.readdirSync(postsDirectory);
 
@@ -13,10 +18,11 @@ export function getAllPosts() {
       const slug = fileName.replace(/\.md$/, "");
       const fullPath = path.join(postsDirectory, fileName);
       const fileContents = fs.readFileSync(fullPath, "utf8");
-      const { data } = matter(fileContents);
+      const { data, content } = matter(fileContents);
 
       return {
         slug,
+        readingTime: getReadingTime(content),
         ...data,
       };
     });
@@ -32,6 +38,7 @@ export function getPostBySlug(slug) {
   return {
     slug,
     content,
+    readingTime: getReadingTime(content),
     ...data,
   };
 }

@@ -96,6 +96,8 @@ const Blog = ({ posts }) => {
                         month: "long",
                         day: "numeric",
                       })}
+                      {" · "}
+                      {t("readingTime", { minutes: post.readingTime })}
                     </p>
                   </div>
                 </div>

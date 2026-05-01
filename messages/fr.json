@@ -73,7 +73,8 @@
     "searchPlaceholder": "Rechercher un article...",
     "filterByTag": "Filtrer par tag",
     "allTags": "Tous",
-    "noResults": "Aucun article trouvé."
+    "noResults": "Aucun article trouvé.",
+    "readingTime": "{minutes} min de lecture"
   },
   "DiagInnov": {
     "line1": "Conception d'un site web unique pour un diagnostiqueur, avec une direction artistique",
