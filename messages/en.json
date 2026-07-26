@@ -21,12 +21,12 @@
     "descProject3": " multiple projects:"
   },
   "AboutComponent": {
-    "Line1": "Hello! I'm Mathéo, a Software Engineer based in Paris, France.",
-    "Line2": "I've always been fascinated by tech and IT.",
-    "Line3": "Since discovering programming, I've loved creating things—whether it's websites, applications, software, or even completely useless but fun projects!",
-    "Line4": "I had the opportunity to complete a web development program at OpenClassrooms, where I gained solid technical expertise by applying my knowledge to real-world projects.",
-    "Line5": "With these skills, I co-founded my own company with a partner, specializing in web solutions for the real estate sector. We have collaborated with property inspectors, media partners, and business software publishers on large-scale projects, ranging from SaaS platforms to tools that optimize lead acquisition and client data management.",
-    "Line6": "Today, I see myself as a dedicated, passionate, and curious developer, always motivated by technical challenges.",
+    "Line1": "Hello! I'm Mathéo, a full-stack Software Engineer based in Paris.",
+    "Line2": "Since discovering programming, I've loved building things: websites, apps, full products... and sometimes completely useless but fun projects.",
+    "Line3": "Today I'm a developer at Diggers Factory, where we produce vinyl records on demand for artists around the world. I build product features end to end: from the backend (AdonisJS, PostgreSQL) orchestrating production and distribution, to Next.js and TypeScript front-end flows, all the way to animated Three.js marketing pages.",
+    "Line4": "On the side, I launched MyPhillowFriend, an iOS philosophical companion app available on the App Store: designed, built, and shipped solo, from the API to the marketing. It's my playground to try everything, from RevenueCat to AI scoring algorithms.",
+    "Line5": "Before that, I co-founded a freelance business specializing in web solutions for the real estate sector: around ten SaaS projects delivered for property inspectors, media outlets, and business software publishers.",
+    "Line6": "What drives me: taking ownership of a product, shipping it fast, and keeping on learning along the way.",
     "Line7": "Here are some of the technologies I work with regularly:"
   },
   "PhotoComponent": {

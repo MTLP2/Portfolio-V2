@@ -68,17 +68,17 @@ const About = () => {
       </div>
       <div>
         <ul className="flex flex-wrap gap-4 w-[50%] mb-32">
-          <li className="bg-gray-200 p-2 shadow-md rounded-md">
-            HTML & (S)CSS
-          </li>
           <li className="bg-gray-200 p-2 shadow-md rounded-md">TypeScript</li>
-          <li className="bg-gray-200 p-2 shadow-md rounded-md">Vue.js</li>
-          <li className="bg-gray-200 p-2 shadow-md rounded-md">React.js</li>
+          <li className="bg-gray-200 p-2 shadow-md rounded-md">React</li>
           <li className="bg-gray-200 p-2 shadow-md rounded-md">Next.js</li>
           <li className="bg-gray-200 p-2 shadow-md rounded-md">Node.js</li>
-          <li className="bg-gray-200 p-2 shadow-md rounded-md">TailwindCSS</li>
-          <li className="bg-gray-200 p-2 shadow-md rounded-md">Firebase</li>
-          <li className="bg-gray-200 p-2 shadow-md rounded-md">Jest</li>
+          <li className="bg-gray-200 p-2 shadow-md rounded-md">AdonisJS</li>
+          <li className="bg-gray-200 p-2 shadow-md rounded-md">PostgreSQL</li>
+          <li className="bg-gray-200 p-2 shadow-md rounded-md">Tailwind CSS</li>
+          <li className="bg-gray-200 p-2 shadow-md rounded-md">
+            Capacitor (iOS)
+          </li>
+          <li className="bg-gray-200 p-2 shadow-md rounded-md">Docker</li>
         </ul>
       </div>
     </section>
