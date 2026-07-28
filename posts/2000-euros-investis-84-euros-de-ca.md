@@ -7,6 +7,7 @@ descriptionEn: "A year of solo development on an iOS app blending philosophy and
 tags: ["indie dev", "iOS", "startup", "retour d'expérience", "IA", "Français"]
 author: "Mathéo Lopes"
 authorImage: "/Photo.JPG"
+image: "/blog/BilanAppIOS.png"
 recommendations: ["Xor_explained"]
 ---
 
