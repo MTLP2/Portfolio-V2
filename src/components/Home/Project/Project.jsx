@@ -18,7 +18,7 @@ const projects = [
     image: "/MPF.png",
     title: "MyPhillowFriend",
     subtitle: "IOS App",
-    link: "https://www.myphillowfriend.com/",
+    link: "https://apps.apple.com/fr/app/myphillowfriend-philosophie/id6760203513",
   },
   {
     image: "/TL/TLHome.png",
