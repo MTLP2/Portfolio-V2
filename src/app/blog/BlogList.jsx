@@ -150,17 +150,17 @@ const BlogList = ({ posts }) => {
             {t("noResults")}
           </p>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 auto-rows-fr gap-6">
             {filteredPosts.map((post) => (
-              <Link key={post.slug} href={`/blog/${post.slug}`}>
+              <Link key={post.slug} href={`/blog/${post.slug}`} className="h-full">
                 <motion.div
-                  className="rounded-[30px] shadow-md overflow-hidden relative group cursor-pointer"
+                  className="h-full flex flex-col rounded-[30px] shadow-md overflow-hidden relative group cursor-pointer"
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
                   variants={cardMotion}
                 >
-                  <div className="h-[200px] relative bg-zinc-200 dark:bg-zinc-700">
+                  <div className="h-[200px] flex-shrink-0 relative bg-zinc-200 dark:bg-zinc-700">
                     {post.image ? (
                       <Image
                         src={post.image}
@@ -176,8 +176,8 @@ const BlogList = ({ posts }) => {
                       </div>
                     )}
                   </div>
-                  <div className="p-6 bg-white dark:bg-zinc-800 rounded-b-[30px]">
-                    <h2 className="text-gray-900 dark:text-gray-100 text-lg font-Tropical font-bold mb-2">
+                  <div className="flex-1 flex flex-col p-6 bg-white dark:bg-zinc-800 rounded-b-[30px]">
+                    <h2 className="text-gray-900 dark:text-gray-100 text-lg font-Tropical font-bold mb-2 line-clamp-2">
                       {post.title}
                     </h2>
                     <div className="flex items-center gap-3 mb-3">
@@ -205,10 +205,10 @@ const BlogList = ({ posts }) => {
                         </p>
                       </div>
                     </div>
-                    <p className="text-gray-700 dark:text-gray-200 text-sm">
+                    <p className="text-gray-700 dark:text-gray-200 text-sm line-clamp-3">
                       {post.description}
                     </p>
-                    <div className="flex items-center mt-4 text-red-500 font-Tropical font-semibold group-hover:gap-2 transition-all">
+                    <div className="flex items-center mt-auto pt-4 text-red-500 font-Tropical font-semibold group-hover:gap-2 transition-all">
                       <span>{t("readMore")}</span>
                       <ArrowUpRightIcon className="w-5 h-5 ml-1 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                     </div>
