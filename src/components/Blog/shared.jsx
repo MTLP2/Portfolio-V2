@@ -64,18 +64,18 @@ export const PostCard = ({ post }) => {
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className={`${cardClass} group flex flex-col transition-transform duration-[250ms] hover:-translate-y-1`}
+      className={`${cardClass} group h-full flex flex-col transition-transform duration-[250ms] hover:-translate-y-1`}
     >
-      <Cover post={post} sizes="(min-width: 1024px) 380px, 100vw" />
-      <div className="px-6 pt-[22px] pb-[26px] flex flex-col gap-3">
+      <Cover post={post} sizes="(min-width: 1024px) 380px, 100vw" className="flex-shrink-0" />
+      <div className="flex-1 px-6 pt-[22px] pb-[26px] flex flex-col gap-3">
         <PostMeta post={post} className="text-xs" />
-        <h3 className="text-xl font-normal leading-[1.3] text-[#111] dark:text-gray-100 [text-wrap:balance]">
+        <h3 className="text-xl font-normal leading-[1.3] text-[#111] dark:text-gray-100 [text-wrap:balance] line-clamp-2">
           {post.title}
         </h3>
-        <p className="text-sm leading-[1.6] text-[#6b6b6b] dark:text-gray-400 [text-wrap:pretty]">
+        <p className="text-sm leading-[1.6] text-[#6b6b6b] dark:text-gray-400 [text-wrap:pretty] line-clamp-3">
           {post.description}
         </p>
-        <span className="text-sm text-accent">{t("readMore")} ↗</span>
+        <span className="mt-auto text-sm text-accent">{t("readMore")} ↗</span>
       </div>
     </Link>
   );
