@@ -70,11 +70,40 @@
     "readMore": "Lire l'article",
     "backToBlog": "Retour au blog",
     "recommendations": "Articles recommandés",
-    "searchPlaceholder": "Rechercher un article...",
-    "filterByTag": "Filtrer par tag",
-    "allTags": "Tous",
-    "noResults": "Aucun article trouvé.",
-    "readingTime": "{minutes} min de lecture"
+    "readingTime": "{minutes} min de lecture",
+    "latest": "Derniers articles",
+    "latestKicker": "Derniers",
+    "heroKicker": "Hey, bienvenue sur",
+    "heroDescription": "Mes retours d'expérience d'indie dev, des concepts techniques expliqués simplement et mon quotidien de software engineer en startup.",
+    "exploreKicker": "Explorer",
+    "exploreTitle": "Explorer par catégorie",
+    "exploreSubtitle": "Commence par ce qui t'intéresse en ce moment.",
+    "exploreCategory": "Explorer {name}",
+    "category": "Catégorie",
+    "allPosts": "Tous les articles",
+    "emptyCategory": "Premier article de cette catégorie bientôt.",
+    "otherCategories": "Autres catégories",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "postsCount": "{count, plural, =0 {Bientôt} one {# article} other {# articles}}",
+    "categories": {
+      "dev": {
+        "name": "Dev",
+        "description": "Ce que j'apprends en codant au quotidien."
+      },
+      "indie": {
+        "name": "Indie",
+        "description": "Mes apps en solo, de l'idée aux chiffres."
+      },
+      "career": {
+        "name": "Carrière",
+        "description": "Mon parcours, du freelance à 20 ans jusqu'à la startup."
+      },
+      "taste": {
+        "name": "Taste",
+        "description": "Tout ce qui me plaît en dehors du code."
+      }
+    }
   },
   "DiagInnov": {
     "line1": "Conception d'un site web unique pour un diagnostiqueur, avec une direction artistique",

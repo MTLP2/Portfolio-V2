@@ -8,6 +8,7 @@ tags: ["xor", "binaire", "programmation", "opérateurs", "maths", "Français"]
 author: "Mathéo Lopes"
 authorImage: "/Photo.JPG"
 image: "/blog/PrincipeduXOR.png"
+category: "dev"
 ---
 
 ## Le principe du XOR (eXclusive OR)

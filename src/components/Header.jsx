@@ -129,6 +129,14 @@ const Header = () => {
           </button>
         </span>
       </div>
+
+      {/* Blog Link */}
+      <Link
+        href="/blog"
+        className="hidden md:block self-center font-semibold font-Tropical text-xl md:text-2xl text-white dark:text-gray-200 hover:underline"
+      >
+        Blog
+      </Link>
     </header>
   );
 };

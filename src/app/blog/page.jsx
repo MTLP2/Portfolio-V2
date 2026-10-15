@@ -1,5 +1,6 @@
 import React from "react";
-import { getAllPosts } from "@/utils/blog";
+import { getLocale } from "next-intl/server";
+import { getAllPosts, getCategorySummaries } from "@/utils/blog";
 import BlogList from "./BlogList";
 
 const siteUrl = "https://matheolopes.com";
@@ -26,10 +27,11 @@ export const metadata = {
   },
 };
 
-const BlogPage = () => {
-  const posts = getAllPosts();
+const BlogPage = async () => {
+  const locale = await getLocale();
+  const posts = getAllPosts(locale);
 
-  return <BlogList posts={posts} />;
+  return <BlogList posts={posts} categories={getCategorySummaries(posts)} />;
 };
 
 export default BlogPage;

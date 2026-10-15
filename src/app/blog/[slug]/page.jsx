@@ -1,4 +1,5 @@
 import React from "react";
+import { getLocale } from "next-intl/server";
 import { getAllPosts, getPostBySlug } from "@/utils/blog";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkMath from "remark-math";
@@ -12,8 +13,8 @@ export function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
 }
 
-export function generateMetadata({ params }) {
-  const post = getPostBySlug(params.slug);
+export async function generateMetadata({ params }) {
+  const post = getPostBySlug(params.slug, await getLocale());
   const url = `${siteUrl}/blog/${params.slug}`;
   const imageUrl = post.image ? `${siteUrl}${post.image}` : `${siteUrl}/Photo.jpg`;
 
@@ -73,13 +74,20 @@ function generateArticleJsonLd(post, slug) {
   };
 }
 
-const BlogPostPage = ({ params }) => {
-  const post = getPostBySlug(params.slug);
-  const allPosts = getAllPosts();
+const BlogPostPage = async ({ params }) => {
+  const locale = await getLocale();
+  const post = getPostBySlug(params.slug, locale);
+  const allPosts = getAllPosts(locale);
 
-  const recommendations = (post.recommendations || [])
+  // Recommandations du frontmatter, sinon les derniers articles des autres catégories
+  const picked = (post.recommendations || [])
     .map((slug) => allPosts.find((p) => p.slug === slug))
     .filter(Boolean);
+  const recommendations = picked.length
+    ? picked
+    : allPosts
+        .filter((p) => p.slug !== post.slug && p.category !== post.category)
+        .slice(0, 3);
 
   const mdxContent = (
     <MDXRemote

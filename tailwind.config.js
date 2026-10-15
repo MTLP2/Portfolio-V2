@@ -10,6 +10,11 @@ module.exports = {
       },
       fontFamily: {
         Tropical: ['"Tropical"', 'cursive'], // Ajoute ta police ici
+        Geist: ['"Geist"', 'system-ui', 'sans-serif'],
+        GeistMono: ['"Geist Mono"', 'ui-monospace', 'monospace'],
+      },
+      colors: {
+        accent: '#ef5a3c',
       },
     },
   },

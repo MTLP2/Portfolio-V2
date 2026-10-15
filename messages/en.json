@@ -70,11 +70,40 @@
     "readMore": "Read more",
     "backToBlog": "Back to blog",
     "recommendations": "Recommended posts",
-    "searchPlaceholder": "Search posts...",
-    "filterByTag": "Filter by tag",
-    "allTags": "All",
-    "noResults": "No posts found.",
-    "readingTime": "{minutes} min read"
+    "readingTime": "{minutes} min read",
+    "latest": "Latest posts",
+    "latestKicker": "Latest",
+    "heroKicker": "Hey, welcome to the",
+    "heroDescription": "Lessons from indie dev, technical concepts explained simply, and my day-to-day as a software engineer at a startup.",
+    "exploreKicker": "Explore",
+    "exploreTitle": "Explore by category",
+    "exploreSubtitle": "Start with whatever you're curious about right now.",
+    "exploreCategory": "Explore {name}",
+    "category": "Category",
+    "allPosts": "All posts",
+    "emptyCategory": "First post in this category coming soon.",
+    "otherCategories": "Other categories",
+    "previous": "Previous",
+    "next": "Next",
+    "postsCount": "{count, plural, =0 {Coming soon} one {# post} other {# posts}}",
+    "categories": {
+      "dev": {
+        "name": "Dev",
+        "description": "What I learn from coding every day."
+      },
+      "indie": {
+        "name": "Indie",
+        "description": "My solo apps, from idea to numbers."
+      },
+      "career": {
+        "name": "Career",
+        "description": "My path, from freelancing at 20 to a startup."
+      },
+      "taste": {
+        "name": "Taste",
+        "description": "Everything I enjoy outside of code."
+      }
+    }
   },
   "DiagInnov": {
     "line1": "Design of a unique website for a diagnostician, with a dynamic and colorful cartoon aesthetic.",
